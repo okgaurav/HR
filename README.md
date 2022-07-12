@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # HrRecommendationFrontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
@@ -26,8 +25,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
-# HR Recommandation Frontend project
-
-## This repository is created for HR recommendation frontend project and is managed by Squad-3 & 4 - Grads 2022
->>>>>>> b7bf36f53de5de3ab164497189f4477413b868a9
