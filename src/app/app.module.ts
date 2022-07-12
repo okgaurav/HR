@@ -19,7 +19,6 @@ import { PostRecommendationComponent } from './components/recommendation/post-re
     FooterComponent,
     LoginComponent,
     SignupComponent,
-    PostRecommendationPageComponent,
     PostRecommendationComponent
   ],
   imports: [
