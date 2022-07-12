@@ -8,7 +8,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
-import { PostRecommendationPageComponent } from './components/recommendation/post-recommendation-page/post-recommendation-page.component';
 import { PostRecommendationComponent } from './components/recommendation/post-recommendation/post-recommendation.component';
 
 @NgModule({
