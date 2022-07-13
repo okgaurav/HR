@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { PostRecommendationComponent } from './components/recommendation/post-recommendation/post-recommendation.component';
+import { UserProfileComponent } from './components/users/user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,11 @@ import { PostRecommendationComponent } from './components/recommendation/post-re
     FooterComponent,
     LoginComponent,
     SignupComponent,
-    PostRecommendationComponent
+    PostRecommendationComponent,
+    UserProfileComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
