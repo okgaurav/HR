@@ -1,0 +1,87 @@
+h6{
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(164, 120, 8));
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+}
+.About{
+    text-align: left;
+
+}
+div .bu{
+    
+    
+    position: absolute;
+    margin: 0;
+    bottom: 10px;
+    right: 20px;
+    
+}
+.f1{
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(164, 120, 8));
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-top: 40px;
+    margin: 0;
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: justify;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      background-color: none;
+  }
+.btn {
+    background-color: none; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 10px 10px; /* Some padding */
+    font-size: 5px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    size: 10px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: none;
+    border: 1px;
+    color: black;
+  }
+a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(104, 78, 4);
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
