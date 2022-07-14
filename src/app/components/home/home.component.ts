@@ -6,9 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-state="UNAUTH"
+  state="AUTH"
+
   toggleState(newState: string):void{
-this.state=newState;
+    this.state=newState;
   }
 
   constructor() { }

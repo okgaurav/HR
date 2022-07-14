@@ -1,0 +1,40 @@
+$landingIllustration: "/assets/illustrations/atf.svg";
+.left-section{
+    display: flex;
+}
+
+.right-section {
+    background-image: url(#{$landingIllustration});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 50px;
+    min-height: 90vh;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    color: #ffffff; }
+    @media (max-width: 991px) {
+      .intro-section {
+        padding-left: 50px;
+        padding-rigth: 50px; } }
+    @media (max-width: 767px) {
+      .intro-section {
+        padding: 28px; } }
+    @media (max-width: 575px) {
+      .intro-section {
+        min-height: auto; } }
+
+        .post-btn {
+            padding: 13px 30px;
+            background-color: #000;
+            border-radius: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff; }
+            .login-btn:hover, .signup-btn:hover {
+              border: 1px solid #000;
+              background-color: transparent;
+              color: #000; }
