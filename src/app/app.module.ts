@@ -10,6 +10,8 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { PostRecommendationComponent } from './components/recommendation/post-recommendation/post-recommendation.component';
 import { UserProfileComponent } from './components/users/user-profile/user-profile.component';
+import {MatMenuModule} from '@angular/material/menu';
+import {NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,7 @@ import { UserProfileComponent } from './components/users/user-profile/user-profi
     PostRecommendationComponent,
     UserProfileComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, MatMenuModule,NoopAnimationsModule ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,32 +1,45 @@
-<nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
+<div>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="img-fluid" src="/assets/Images/HRlogoimage.png" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"></a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-outline-primary">Recommend HR</button>
+        <button mat-button [matMenuTriggerFor]="first_dropdown" class="button-color">View Recommendation
+        </button>
+        <mat-menu #first_dropdown="matMenu">
+          <button mat-menu-item>View Recommendations</button>
+          <button mat-menu-item>Public Recommendations</button>
+          <button mat-menu-item>Private Recommendations</button>
+          <button mat-menu-item>Archived Recommendations</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="second_dropdown" class="button-color">       
+          <img class="profile_photo" src="/assets/Images/userprofileimage.png" />
+        </button>
+        <mat-menu #second_dropdown="matMenu">
+          <button mat-menu-item>View Profile</button>
+          <button mat-menu-item>Update Profile</button>
+          <button mat-menu-item>Logout</button>
+        </mat-menu>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>
