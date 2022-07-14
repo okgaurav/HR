@@ -9,8 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { PostRecommendationComponent } from './components/recommendation/post-recommendation/post-recommendation.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ProfileComponent } from './components/profile/profile.component';
+import { UserProfileComponent } from './components/users/user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -21,15 +20,10 @@ import { ProfileComponent } from './components/profile/profile.component';
     LoginComponent,
     SignupComponent,
     PostRecommendationComponent,
-    ProfileComponent
+    UserProfileComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    RouterModule,
-    BrowserAnimationsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
