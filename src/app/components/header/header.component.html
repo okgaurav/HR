@@ -4,7 +4,7 @@
       <a class="navbar-brand" href="#">
         <img class="img-fluid" src="/assets/Images/HRlogoimage.png" />
       </a>
-      <button
+      <button 
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
@@ -13,6 +13,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
+      <!--this button is to represent the 3 lines which you see when see the web browser in mobile view -->
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -22,14 +23,17 @@
           </li>
         </ul>
         <button type="button" class="btn btn-outline-primary">Recommend HR</button>
+        <!--mat-button rectangular text button with no elevation-->
         <button mat-button [matMenuTriggerFor]="first_dropdown" class="button-color">View Recommendation
         </button>
+        <!--<mat-menu> element does not render anything. The menu is attached to and opened via application of the matMenuTriggerFor-->
         <mat-menu #first_dropdown="matMenu">
           <button mat-menu-item>View Recommendations</button>
           <button mat-menu-item>Public Recommendations</button>
           <button mat-menu-item>Private Recommendations</button>
           <button mat-menu-item>Archived Recommendations</button>
         </mat-menu>
+        <!--mat-menu is floating panel contaning a list of options containging button as well-->
 
         <button mat-button [matMenuTriggerFor]="second_dropdown" class="button-color">       
           <img class="profile_photo" src="/assets/Images/userprofileimage.png" />
