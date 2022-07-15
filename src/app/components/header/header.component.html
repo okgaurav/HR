@@ -1,6 +1,7 @@
 <div>
-  <nav class="navbar navbar-expand-lg bg-dark">
+  <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
+      <!-- Brand Logo -->
       <a class="navbar-brand" href="#">
         <img class="logo" src="/assets/Images/HRlogoimage.png" />
       </a>
@@ -17,31 +18,27 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"></a>
-          </li>
-        </ul>
-        <button type="button" class="btn btn-outline-primary btn-color">Recommend HR</button>
+        <button type="button" class="btn btn-primary btn-color">Recommend HR</button>
         <!--mat-button rectangular text button with no elevation-->
-        <button mat-button [matMenuTriggerFor]="first_dropdown" class="btn-color btn btn-outline-primary">View Recommendation
+        <button mat-button [matMenuTriggerFor]="first_dropdown" class="btn-color btn btn-primary">View Recommendation
         </button>
         <!--<mat-menu> element does not render anything. The menu is attached to and opened via application of the matMenuTriggerFor-->
-        <mat-menu #first_dropdown="matMenu">
-          <button mat-menu-item>View Recommendations</button>
-          <button mat-menu-item>Public Recommendations</button>
-          <button mat-menu-item>Private Recommendations</button>
-          <button mat-menu-item>Archived Recommendations</button>
+        <mat-menu #first_dropdown="matMenu" class="menu-dropdown">
+          <button mat-menu-item class="dropdown-button">View Recommendations</button>
+          <button mat-menu-item class="dropdown-button">Public Recommendations</button>
+          <button mat-menu-item class="dropdown-button">Private Recommendations</button>
+          <button mat-menu-item class="dropdown-button">Archived Recommendations</button>
         </mat-menu>
         <!--mat-menu is floating panel contaning a list of options containging button as well-->
 
         <button mat-button [matMenuTriggerFor]="second_dropdown" class="button-color">       
           <img class="profile_photo" src="/assets/Images/userprofileimage.png" />
         </button>
-        <mat-menu #second_dropdown="matMenu">
-          <button mat-menu-item>View Profile</button>
-          <button mat-menu-item>Update Profile</button>
-          <button mat-menu-item>Logout</button>
+        <mat-menu #second_dropdown="matMenu" class="menu-dropdown">
+          <button mat-menu-item class="userName">Sample name</button>
+          <button mat-menu-item class="dropdown-button">View Profile</button>
+          <button mat-menu-item class="dropdown-button">Update Profile</button>
+          <button mat-menu-item class="dropdown-button">Logout</button>
         </mat-menu>
       </div>
     </div>
