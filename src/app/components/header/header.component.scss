@@ -1,17 +1,27 @@
-.img-fluid{
+.logo{
   height: 3rem;
+  margin-left: 80px;
   
 }
 .profile_photo{
   height: 3rem;
   border-radius: 50%;
-  outline: none;
+}
+
+.button-color{
   border: 0;
+  background-color: transparent !important;
+  margin-right: 10px;
+  margin-left: 30px;
 }
 
 .bg-light{
-  background-color: aqua !important;
+  /* background-color: transparent !important; */
+  background-color: rgb(189, 118, 25) !important;
+  padding: 0 !important;
 }
-.btn{
-  margin: 15px;
+.btn-color{
+  border: 0;
+  background-color: transparent !important;
+  font-size: 18px;
 }

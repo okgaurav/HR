@@ -1,8 +1,8 @@
 <div>
-  <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img class="img-fluid" src="/assets/Images/HRlogoimage.png" />
+        <img class="logo" src="/assets/Images/HRlogoimage.png" />
       </a>
       <button 
         class="navbar-toggler"
@@ -22,9 +22,9 @@
             <a class="nav-link active" aria-current="page" href="#"></a>
           </li>
         </ul>
-        <button type="button" class="btn btn-outline-primary">Recommend HR</button>
+        <button type="button" class="btn btn-outline-primary btn-color">Recommend HR</button>
         <!--mat-button rectangular text button with no elevation-->
-        <button mat-button [matMenuTriggerFor]="first_dropdown" class="button-color">View Recommendation
+        <button mat-button [matMenuTriggerFor]="first_dropdown" class="btn-color btn btn-outline-primary">View Recommendation
         </button>
         <!--<mat-menu> element does not render anything. The menu is attached to and opened via application of the matMenuTriggerFor-->
         <mat-menu #first_dropdown="matMenu">
