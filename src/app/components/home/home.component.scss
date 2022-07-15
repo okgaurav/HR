@@ -1,56 +1,73 @@
-$landingIllustration: "/assets/illustrations/atf.svg";
+@import "../../styles/settings.scss";
 
-.home-section{
-  padding: 20px 60px;
+.display-text{
+  font-size: large;
 }
+@media (min-width: 575px) {
+  .display-text {
+    font-size: x-large; } }
+@media (min-width: 768px) {
+  .display-text {
+    font-size: xx-large; } }
+@media (min-width: 992px) {
+  .display-text {
+    font-size: xx-large; } }
+@media (min-width: 1200px) {
+  .display-text {
+    font-size: 50px; } }
+@media (min-width: 1400px) {
+  .display-text {
+    font-size: 64px; } }
 
-.home-left-section{
-    // display: flex;
+.lead-text{
+  font-size: small;
+  font-weight: 300;
 }
+@media (min-width: 575px) {
+  .lead-text {
+    font-size: medium; } }
+@media (min-width: 768px) {
+  .lead-text {
+    font-size: x-large; } }
+@media (min-width: 768px) {
+  .lead-text {
+    font-size: large; } }
+@media (min-width: 1600px) {
+  .lead-text {
+    font-size: x-large; } }
 
 .atf-image{
-  min-height: 90vh;
+  height: 40vh;
   width: 100%;
 }
-@media (max-width: 575px) {
+@media (min-width: 575px) {
   .atf-image {
-    min-height: 100px; } }
+    min-height: 50vh; } }
+@media (min-width: 992px) {
+  .atf-image {
+    min-height: 90vh; } }
 
-.home-right-section {
-    background-image: url(#{$landingIllustration});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 50px 50px;
-    min-height: 80vh;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    color: #ffffff; }
-    @media (max-width: 1200px) {
-      .intro-section {
-        min-height: 60vh;  } }
-    @media (max-width: 991px) {
-      .intro-section {
-        padding-left: 50px;
-        padding-rigth: 50px; } }
-    @media (max-width: 767px) {
-      .intro-section {
-        padding: 28px; } }
-    @media (max-width: 575px) {
-      .intro-section {
-        min-height: auto; } }
-
-        .post-btn {
-            padding: 13px 30px;
-            background-color: #000;
-            border-radius: 40px;
-            font-size: 20px;
-            font-weight: bold;
-            color: #fff; }
-            .login-btn:hover, .signup-btn:hover {
-              border: 1px solid #000;
-              background-color: transparent;
-              color: #000; }
+.post-btn {
+  padding: 13px 30px;
+  background-color: #000;
+  font-size: 14x;
+  font-weight: bold;
+  color: #fff; 
+  width: 40%;
+  border: 1px solid #000;
+}
+@media (min-width: 575px) {
+  .post-btn {
+    font-size: 18px; } }
+@media (min-width: 768px) {
+  .post-btn {
+    font-size: 24px; } }
+@media (min-width: 992px) {
+  .post-btn {
+    font-size: 16px;} }
+    
+.post-btn:hover {
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000; 
+}

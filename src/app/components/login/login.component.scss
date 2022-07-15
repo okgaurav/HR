@@ -1,43 +1,11 @@
-$landingIllustration: "/assets/illustrations/landing.svg";
-body {
-    background-color: #fff;
-    font-family: 'Karla', sans-serif; }
-    
-  h1 > a {
-      text-decoration:none;
-      color:#fff !important;
-  }
-  
-  .intro-section {
-    background-image: url(#{$landingIllustration});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 75px 95px;
-    min-height: 100vh;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    color: #ffffff; }
-    @media (max-width: 991px) {
-      .intro-section {
-        padding-left: 50px;
-        padding-rigth: 50px; } }
-    @media (max-width: 767px) {
-      .intro-section {
-        padding: 28px; } }
-    @media (max-width: 575px) {
-      .intro-section {
-        min-height: auto; } }
-  
-  .brand-wrapper .logo {
-    height: 35px; }
-  
-  @media (max-width: 767px) {
-    .brand-wrapper {
-      margin-bottom: 35px; } }
+.login-image{
+  display: none;
+}
+@media (min-width: 992px) {
+  .login-image{
+    display: block;
+    max-height: 90vh;
+  } }
   
   .intro-content-wrapper {
     width: 410px;
