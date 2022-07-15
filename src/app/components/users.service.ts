@@ -10,7 +10,7 @@ export class UsersService {
     
    }
    getData(){
-    let url="http://localhost:8080/api/Users";
+    let url="server/api/Users/1";
     return this.http.get(url);
   }
 }

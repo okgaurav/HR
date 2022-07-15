@@ -1,6 +1,5 @@
 <head>
     <title>
-        <h1>Hi! {{username}}</h1>
     </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -16,8 +15,8 @@
                     style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem; border:1.5px solid white;">
                     <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
                       alt="Avatar" class="img-fluid my-5"  style="width: 105px; height: 105px; border-radius: 50%; object-fit: cover;" />
-                    <h3>{{username}}</h3>
-                    <p>{{designation}} <br/> {{role}}</p>
+                    <h3>{{userdata.userName}}</h3>
+                    <p>{{userdata.designation}} <br/> {{userdata.roles}}</p>
                     <i class="far fa-edit mb-5"></i>
                   </div>
                   <div class="col-md-8" style="background-color: rgb(0, 0, 0); color:#f4f5f7; border: 1.5px solid white;">
@@ -30,11 +29,11 @@
                       <div class="row pt-1">
                         <div class="col-6 mb-3">
                           <h4>Email</h4>
-                          <p class="text-muted" >{{emailId}}</p>
+                          <p class="text-muted" >{{userdata.emailId}}</p>
                         </div>
                         <div class="col-6 mb-3">
                           <h4>Phone</h4>
-                          <p class="text-muted">{{contactNumber}}</p>
+                          <p class="text-muted">{{userdata.phoneNum}}</p>
                         </div>
                       </div>
                      
@@ -42,11 +41,11 @@
                       <div class="row pt-1">
                         <div class="col-6 mb-3">
                           <h4>Employee ID</h4>
-                          <p class="text-muted">{{employeeId}}</p>
+                          <p class="text-muted">{{userdata.employeeId}}</p>
                         </div>
                         <div class="col-6 mb-3">
                           <h4>Department</h4>
-                          <p class="text-muted">{{department}}</p>
+                          <p class="text-muted">{{userdata.departments}}</p>
                         </div>
                       </div>
                     
