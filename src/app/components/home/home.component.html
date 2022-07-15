@@ -1,19 +1,18 @@
 <app-login *ngIf="state === 'UNAUTH' else auth"></app-login>
 
 <ng-template #auth>
-        <div class="container">
+        <div class="px-5 container-lg">
             <div class="row align-items-center">
-                <div class=" col-lg-4">
+                <div class="col-12 order-2 order-lg-1 col-lg-5 col-xxl-5 home-left-section">
                     <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                        <h1 class="display-1 lh-1 mb-3">People are the biggest assets</h1>
-                        <p class="lead fw-normal text-muted mb-5">Create a great place to work at every stage of growth with Sopra Banking Software India</p>
+                        <h1 class="display-5 lh-1 mb-3">People are the biggest assets</h1>
+                        <p class="lead fw-normal text-muted mb-5">A great place to work at every stage of growth with Sopra Banking Software India</p>
                     </div>
-                    <button class="post-btn">Recommend</button>
+                    <button class="post-btn shadow">Login &#x2192;</button>
                 </div>
-                <div class=" col-lg-8">
+                <div class="col-12 order-1 order-lg-2 col-lg-7 col-xxl-7">
                     <div class="">
-                                <div class="right-section">
-                                </div>
+                        <img src="../../../assets/illustrations/atf.svg" alt="atf illustration" class="atf-image"/>
                     </div>
                 </div>
             </div>

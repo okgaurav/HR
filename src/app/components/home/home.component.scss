@@ -1,21 +1,37 @@
 $landingIllustration: "/assets/illustrations/atf.svg";
-.left-section{
-    display: flex;
+
+.home-section{
+  padding: 20px 60px;
 }
 
-.right-section {
+.home-left-section{
+    // display: flex;
+}
+
+.atf-image{
+  min-height: 90vh;
+  width: 100%;
+}
+@media (max-width: 575px) {
+  .atf-image {
+    min-height: 100px; } }
+
+.home-right-section {
     background-image: url(#{$landingIllustration});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 50px 50px;
-    min-height: 90vh;
+    min-height: 80vh;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
     color: #ffffff; }
+    @media (max-width: 1200px) {
+      .intro-section {
+        min-height: 60vh;  } }
     @media (max-width: 991px) {
       .intro-section {
         padding-left: 50px;
