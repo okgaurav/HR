@@ -18,14 +18,16 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <button type="button" class="btn btn-primary btn-color">Recommend</button>
+        <button type="button" class="btn btn-primary btn-color">Create Recommendation 
+          <i class="bi bi-plus"></i>
+        </button>
         <!--mat-button rectangular text button with no elevation-->
         <button mat-button [matMenuTriggerFor]="first_dropdown" class="btn-color btn btn-primary">View Recommendation
         </button>
         <!--<mat-menu> element does not render anything. The menu is attached to and opened via application of the matMenuTriggerFor-->
         <mat-menu #first_dropdown="matMenu" class="menu-dropdown">
-          <button mat-menu-item class="dropdown-button">View Recommendations</button>
-          <button mat-menu-item class="dropdown-button">Public Recommendations</button>
+          <button mat-menu-item class="dropdown-button">My Recommendations</button>
+          <button mat-menu-item class="dropdown-button">All Recommendations</button>
           <button mat-menu-item class="dropdown-button">Private Recommendations</button>
           <button mat-menu-item class="dropdown-button">Archived Recommendations</button>
         </mat-menu>
