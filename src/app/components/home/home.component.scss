@@ -24,7 +24,7 @@
   font-size: small;
   font-weight: 300;
 }
-@media (min-width: 576x) {
+@media (min-width: 576px) {
   .lead-text {
     font-size: medium; } }
 @media (min-width: 768px) {
@@ -50,12 +50,12 @@
 
 .post-btn {
   padding: 13px 30px;
-  background-color: #000;
+  background-color: $dark-button-color;
   font-size: 14x;
   font-weight: bold;
-  color: #fff; 
+  color: $dark-button-text-color; 
   width: 40%;
-  border: 1px solid #000;
+  border: 1px solid $dark-button-border-color;
 }
 @media (min-width: 576px) {
   .post-btn {
@@ -68,7 +68,7 @@
     font-size: 16px;} }
     
 .post-btn:hover {
-  border: 1px solid #000;
+  border: 1px solid $dark-button-border-color;
   background-color: transparent;
-  color: #000; 
+  color: $light-button-text-color; 
 }

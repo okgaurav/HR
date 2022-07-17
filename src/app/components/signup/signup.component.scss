@@ -1,93 +1,15 @@
-//$landingIllustration: "/assets/illustrations/landing.svg";
-$button-color: "/app/styles/settings.scss";
+@import "../../styles/settings.scss";
 
-body {
-    background-color: #fff;
-    font-family: 'Karla', sans-serif; }
-    
-  h1 > a {
-      text-decoration:none;
-      color:#fff !important;
-  }
-
-  .login-image{
-    display: none;
-  }
-  @media (min-width: 992px) {
-    .login-image{
-      display: block;
-      max-height: 90vh;
-    } }
-    
+.signup-image{
+  display: none;
+}
+@media (min-width: 992px) {
+  .signup-image{
+    display: block;
+    width: 100%;
+    max-height: 90vh;
+  } }
   
-  .intro-section {
-    //background-image: url(#{$landingIllustration});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    //padding: 75px 95px;
-    //min-height: 100vh;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    color: #ffffff; }
-    @media (max-width: 991px) {
-      .intro-section {
-        padding-left: 50px;
-         } }
-    @media (max-width: 767px) {
-      .intro-section {
-        padding: 28px; } }
-    @media (max-width: 575px) {
-      .intro-section {
-        min-height: auto; } }
-  
-  .brand-wrapper .logo {
-    height: 35px; }
-  
-  @media (max-width: 767px) {
-    .brand-wrapper {
-      margin-bottom: 35px; } }
-  
-  .intro-content-wrapper {
-    width: 410px;
-    max-width: 100%;
-    margin-top: auto;
-    margin-bottom: auto; }
-    .intro-content-wrapper .intro-title {
-      font-size: 40px;
-      font-weight: bold;
-      margin-bottom: 17px; }
-    .intro-content-wrapper .intro-text {
-      font-size: 19px;
-      line-height: 1.37; }
-    .intro-content-wrapper .btn-read-more {
-      background-color: #fff;
-      padding: 13px 30px;
-      border-radius: 0;
-      font-size: 16px;
-      font-weight: bold;
-      color: #000; }
-      .intro-content-wrapper .btn-read-more:hover {
-        background-color: transparent;
-        border: 1px solid #fff;
-        color: #fff; }
-  
-  @media (max-width: 767px) {
-    .intro-section-footer {
-      margin-top: 35px; } }
-  
-  .intro-section-footer .footer-nav a {
-    font-size: 20px;
-    font-weight: bold;
-    color: inherit; }
-    @media (max-width: 767px) {
-      .intro-section-footer .footer-nav a {
-        font-size: 14px; } }
-    .intro-section-footer .footer-nav a + a {
-      margin-left: 30px; }
   
   .form-section {
     display: -webkit-box;
@@ -126,28 +48,23 @@ body {
       .login-wrapper .form-control::placeholder {
         color: #b0adad; }
   
-  .login-title {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 30px; }
-  
-  .login-btn, .signup-btn {
+  .signup-btn {
     padding: 13px 30px;
-    background-color: url(#{$button-color});
+    background-color: $dark-button-color;
+    border: 1px solid $dark-button-border-color;
     border-radius: 0;
     font-size: 20px;
     font-weight: bold;
-    color: #fff; }
-    .login-btn:hover, .signup-btn:hover {
-      border: 1px solid #000;
+    color: $dark-button-text-color; }
+    .signup-btn:hover {
+      border: 1px solid $dark-button-border-color;
       background-color: transparent;
-      color: #000; }
-  
-  .forgot-password-link {
-    font-size: 14px;
-    color: #080808;
-    text-decoration: underline; }
+      color: $light-button-text-color; }
 
-.pointer{
-    cursor: pointer;
-}
+      .login-header{
+        height: 100px;
+      }
+      .hr-recomm-logo{
+        height: 50px;
+        width: 50px;
+      }

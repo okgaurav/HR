@@ -1,9 +1,12 @@
+@import "../../styles/settings.scss";
+
 .login-image{
   display: none;
 }
 @media (min-width: 992px) {
   .login-image{
     display: block;
+    width: 100%;
     max-height: 90vh;
   } }
   
@@ -44,28 +47,27 @@
       .login-wrapper .form-control::placeholder {
         color: #b0adad; }
   
-  .login-title {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 30px; }
   
-  .login-btn, .signup-btn {
+  .login-btn {
     padding: 13px 30px;
-    background-color: #000;
+    background-color: $dark-button-color;
     border-radius: 0;
     font-size: 20px;
     font-weight: bold;
-    color: #fff; }
-    .login-btn:hover, .signup-btn:hover {
-      border: 1px solid #000;
+    border: 1px solid $dark-button-border-color;
+    color: $dark-button-text-color; }
+    .login-btn:hover {
+      border: 1px solid $dark-button-border-color;
       background-color: transparent;
-      color: #000; }
+      color: $light-button-text-color; }
   
-  .forgot-password-link {
-    font-size: 14px;
-    color: #080808;
-    text-decoration: underline; }
+  .forgot-password {
+    font-size: 14px; }
 
-.pointer{
-    cursor: pointer;
-}
+    .login-header{
+      height: 100px;
+    }
+    .hr-recomm-logo{
+      height: 50px;
+      width: 50px;
+    }
