@@ -3,10 +3,13 @@
 .signup-image{
   display: none;
 }
+input{
+  margin: 0;
+}
 @media (min-width: 992px) {
   .signup-image{
     display: block;
-    width: 100%;
+    width: 80%;
     max-height: 90vh;
   } }
   

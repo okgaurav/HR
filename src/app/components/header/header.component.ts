@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   public isNavbarCollapsed = true;
+  public isLoggedIn: boolean = true;
   constructor() {}
 
   ngOnInit(): void {}

@@ -11,6 +11,8 @@ import { SignupComponent } from './components/signup/signup.component';
 import { PostRecommendationComponent } from './components/recommendation/post-recommendation/post-recommendation.component';
 import { UserProfileComponent } from './components/users/user-profile/user-profile.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FeedComponent } from './components/recommendation/feed/feed.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +24,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SignupComponent,
     PostRecommendationComponent,
     UserProfileComponent,
+    FeedComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
+    NgbModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -7,21 +7,18 @@
     bottom: 0;
     width: 100%;
     background-color: rgba(0,0,0,0.777);
-    vertical-align: bottom;
-    
+ 
     display: flex;
 
-  justify-content: space-between;
+    justify-content: space-between;
 
   align-items: center;
+  padding: 0 2rem;
   }
-  .right{
-    padding-right:10px ;
-  }
-  h6{
+
+  .left, .middle{
     color: white;
     font-size: 12px;
-    padding-left:10px ;
   }
  
 a:link {
