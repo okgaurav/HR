@@ -7,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   public isNavbarCollapsed = true;
-  public isLoggedIn: boolean = true;
+  public isLoggedIn: boolean = false;
+  public isHr: boolean = false;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.isLoggedIn = localStorage.getItem('user') ? true : false;
+    this.isHr = localStorage.getItem('user') == 'HR' ? true : false;
+  }
 }

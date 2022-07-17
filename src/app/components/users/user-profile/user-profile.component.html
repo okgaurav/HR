@@ -1,1 +1,85 @@
-<p>user-profile works!</p>
+<div class="user-profile-bg" style="height: 91vh">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-lg-6 mb-6 mb-lg-0">
+        <div class="card mb-3" style="border-radius: 0.5rem">
+          <div class="row g-2">
+            <div
+              class="col-md-4 gradient-custom text-center text-white"
+              style="
+                border-top-left-radius: 0.5rem;
+                border-bottom-left-radius: 0.5rem;
+                border: 1.5px solid white;
+              "
+            >
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                alt="Avatar"
+                class="img-fluid my-5"
+                style="
+                  width: 105px;
+                  height: 105px;
+                  border-radius: 50%;
+                  object-fit: cover;
+                "
+              />
+              <h3>{{ username }}</h3>
+              <p>
+                {{ designation }} <br />
+                {{ role }}
+              </p>
+              <!-- <i class="far fa-edit mb-5"></i> -->
+            </div>
+            <div
+              class="col-md-8"
+              style="
+                background-color: rgb(0, 0, 0);
+                color: #f4f5f7;
+                border: 1.5px solid white;
+              "
+            >
+              <div class="card-body p-4">
+                <div
+                  style="color: white"
+                  style="display: flex; justify-content: space-between"
+                >
+                  <h3>Personal Details</h3>
+                  <!-- <img id="editOption" src="https://cdn-icons.flaticon.com/png/512/5996/premium/5996831.png?token=exp=1657796890~hmac=e90cd603d3649355ae5326985836866f"  -->
+                  <!-- style="width: 27px; height: 27px; cursor: pointer;"/> -->
+                  <i
+                    class="fa fa-edit"
+                    style="font-size: 24px; color: white"
+                  ></i>
+                </div>
+                <hr />
+                <div class="row pt-1">
+                  <div class="col-6 mb-3">
+                    <h4>Email</h4>
+                    <p style="color: #abacb0">{{ emailId }}</p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h4>Phone</h4>
+                    <p style="color: #abacb0">{{ contactNumber }}</p>
+                  </div>
+                </div>
+
+                <div class="row pt-1">
+                  <div class="col-6 mb-3">
+                    <h4>Employee ID</h4>
+                    <p style="color: #abacb0">
+                      {{ employeeId }}
+                    </p>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <h4>Department</h4>
+                    <p style="color: #abacb0">{{ department }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -8,8 +8,8 @@
   height: 3.5rem;
 }
 .profile_photo{
-  height: 2.3rem;
-  width: 2.3rem;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 50%;
   margin: 0.5rem;
 }
@@ -82,4 +82,7 @@
   background-color: $navbar-background-color !important;
   margin-top: 10px;
   border-radius: 2% !important;
+}
+.dropdown-toggle::after {
+  content: none;
 }

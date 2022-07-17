@@ -41,24 +41,30 @@
           >
             View Recommendations
           </button>
-          <div ngbDropdownMenu>
+          <div ngbDropdownMenu style="width: 15rem">
             <button ngbDropdownItem>My Recommendations</button>
             <button ngbDropdownItem>All Recommendations</button>
-            <button ngbDropdownItem>Private Recommendations</button>
-            <button ngbDropdownItem>Archived Recommendations</button>
+            <button ngbDropdownItem *ngIf="isHr">
+              Private Recommendations
+            </button>
+            <button ngbDropdownItem *ngIf="isHr">
+              Archived Recommendations
+            </button>
           </div>
         </div>
         <div ngbDropdown>
           <button class="button-color" ngbDropdownToggle>
             <img
               class="profile_photo"
-              src="/assets/images/userprofileimage.png"
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
             />
           </button>
           <div ngbDropdownMenu>
             <button ngbDropdownItem disabled>Nikhil Tripathi</button>
             <div class="dropdown-divider"></div>
-            <button ngbDropdownItem>My Profile</button>
+            <button ngbDropdownItem [routerLink]="['/userprofile']">
+              My Profile
+            </button>
             <button ngbDropdownItem>Update Profile</button>
             <div class="dropdown-divider"></div>
             <button ngbDropdownItem>Logout</button>
