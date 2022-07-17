@@ -1,0 +1,44 @@
+  @media(max-width : 767px){
+
+  }
+  .Footer{
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.777);
+    vertical-align: bottom;
+    
+    display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+  }
+  .right{
+    padding-right:10px ;
+  }
+  h6{
+    color: white;
+    font-size: 12px;
+    padding-left:10px ;
+  }
+ 
+a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(143, 138, 125);
+    text-decoration: none;
+  }
+    a:active {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
