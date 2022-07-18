@@ -23,10 +23,10 @@
                   object-fit: cover;
                 "
               />
-              <h3>{{ username }}</h3>
+              <h3>{{ userdata.userName }}</h3>
               <p>
-                {{ designation }} <br />
-                {{ role }}
+                {{ userdata.designation }} <br />
+                {{ userdata.roles }}
               </p>
               <!-- <i class="far fa-edit mb-5"></i> -->
             </div>
@@ -55,11 +55,11 @@
                 <div class="row pt-1">
                   <div class="col-6 mb-3">
                     <h4>Email</h4>
-                    <p style="color: #abacb0">{{ emailId }}</p>
+                    <p style="color: #abacb0">{{ userdata.emailId }}</p>
                   </div>
                   <div class="col-6 mb-3">
                     <h4>Phone</h4>
-                    <p style="color: #abacb0">{{ contactNumber }}</p>
+                    <p style="color: #abacb0">{{ userdata.phoneNum }}</p>
                   </div>
                 </div>
 
@@ -67,12 +67,12 @@
                   <div class="col-6 mb-3">
                     <h4>Employee ID</h4>
                     <p style="color: #abacb0">
-                      {{ employeeId }}
+                      {{ userdata.employeeId }}
                     </p>
                   </div>
                   <div class="col-6 mb-3">
                     <h4>Department</h4>
-                    <p style="color: #abacb0">{{ department }}</p>
+                    <p style="color: #abacb0">{{ userdata.departments }}</p>
                   </div>
                 </div>
               </div>

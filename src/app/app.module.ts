@@ -12,6 +12,7 @@ import { UserProfileComponent } from './components/users/user-profile/user-profi
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FeedComponent } from './components/recommendation/feed/feed.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FeedComponent } from './components/recommendation/feed/feed.component';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    HttpClientModule,
     NgbModule,
   ],
   providers: [],
