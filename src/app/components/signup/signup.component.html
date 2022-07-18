@@ -8,21 +8,12 @@
           class="signup-image"
         />
       </div>
-      <div
-        class="d-block d-lg-none login-header d-flex align-items-center px-4"
-      >
-        <img
-          src="../../../assets/logos/download.png"
-          alt="hr recommendation"
-          class="hr-recomm-logo"
-        />
-      </div>
     </div>
-    <div class="col-12 col-lg-6 form-section">
+    <div class="col-12 col-lg-6 form-section mt-3">
       <div class="login-wrapper">
         <h2 class="h3 fw-bold mb-4">Sign up</h2>
         <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-          <div class="form-gruop">
+          <div class="form-gruop mb-3">
             <input
               type="text"
               placeholder="Username"
@@ -37,7 +28,7 @@
               <div *ngIf="f.username.errors.required">Username is required</div>
             </div>
           </div>
-          <div class="form-gruop">
+          <div class="form-gruop mb-3">
             <input
               type="text"
               placeholder="Employee Id"
@@ -54,7 +45,7 @@
               </div>
             </div>
           </div>
-          <div class="form-group">
+          <div class="form-group mb-3">
             <input
               type="email"
               email
@@ -71,7 +62,7 @@
               <div *ngIf="f['email'].errors.email">Email is invalid</div>
             </div>
           </div>
-          <div class="form-group">
+          <div class="form-group mb-3">
             <input
               placeholder="Password"
               type="password"
@@ -89,7 +80,9 @@
               </div>
             </div>
           </div>
-          <div class="d-flex justify-content-between align-items-center mb-5">
+          <div
+            class="d-flex justify-content-between align-items-center mb-5 mt-3"
+          >
             <input
               name="signup"
               id="signup"

@@ -8,21 +8,12 @@
           class="login-image"
         />
       </div>
-      <div
-        class="d-block d-lg-none login-header d-flex align-items-center px-4"
-      >
-        <img
-          src="../../../assets/logos/download.png"
-          alt="hr recommendation"
-          class="hr-recomm-logo"
-        />
-      </div>
     </div>
-    <div class="col-12 col-lg-6 form-section">
+    <div class="col-12 col-lg-6 form-section mt-3">
       <div class="login-wrapper">
         <h2 class="h3 fw-bold mb-4">Sign in</h2>
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-          <div class="form-group">
+          <div class="form-group mb-3">
             <input
               type="email"
               email

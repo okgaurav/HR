@@ -1,7 +1,7 @@
 <div>
   <nav
     class="navbar navbar-expand-lg navbar-dark bg-dark custom-container"
-    *ngIf="isLoggedIn; else loading"
+    *ngIf="isLoggedIn; else logout"
   >
     <!-- Brand Logo -->
     <div>
@@ -42,7 +42,9 @@
             View Recommendations
           </button>
           <div ngbDropdownMenu style="width: 15rem">
-            <button ngbDropdownItem>My Recommendations</button>
+            <button ngbDropdownItem [routerLink]="['/myfeed']">
+              My Recommendations
+            </button>
             <button ngbDropdownItem>All Recommendations</button>
             <button ngbDropdownItem *ngIf="isHr">
               Private Recommendations
@@ -76,7 +78,7 @@
       </div>
     </div>
   </nav>
-  <ng-template #loading>
+  <ng-template #logout>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-container">
       <!-- Brand Logo -->
       <a class="navbar-brand" [routerLink]="['/']">
@@ -116,28 +118,5 @@
         </ul>
       </div>
     </nav>
-  </ng-template>
-  <ng-template #content let-offcanvas>
-    <div class="offcanvas-header">
-      <h4 class="offcanvas-title">Offcanvas title</h4>
-      <button
-        type="button"
-        class="btn-close"
-        aria-label="Close"
-        (click)="offcanvas.dismiss('Cross click')"
-      ></button>
-    </div>
-    <div class="offcanvas-body">
-      <p>One fine body&hellip;</p>
-      <div class="text-end">
-        <button
-          type="button"
-          class="btn btn-outline-dark"
-          (click)="offcanvas.close('Close click')"
-        >
-          Close
-        </button>
-      </div>
-    </div>
   </ng-template>
 </div>
