@@ -4,6 +4,12 @@
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px){
+  .custom-container{
+    
+  padding: 0 4rem;
+  }
+}
 .logo{
   height: 3.5rem;
 }

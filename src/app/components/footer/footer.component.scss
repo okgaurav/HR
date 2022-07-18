@@ -14,7 +14,13 @@
   align-items: center;
   padding: 0 2rem;
   }
-
+@media (max-width:500px) {
+  .Footer{
+    justify-content: center;
+    text-align: center;
+  }
+  
+}
   .left, .middle{
     color: white;
     font-size: 12px;
