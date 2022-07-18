@@ -1,7 +1,10 @@
-<div class="user-profile-bg" style="height: 91vh">
+<section
+  style="background-color: #f1e7e7; height: 91vh"
+  class="user-profile-bg"
+>
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col col-lg-6 mb-6 mb-lg-0">
+      <div class="col col-lg-8 mb-6 mb-lg-0">
         <div class="card mb-3" style="border-radius: 0.5rem">
           <div class="row g-2">
             <div
@@ -9,7 +12,9 @@
               style="
                 border-top-left-radius: 0.5rem;
                 border-bottom-left-radius: 0.5rem;
-                border: 1.5px solid white;
+                border-top-right-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+                border: 2px solid white;
               "
             >
               <img
@@ -23,19 +28,26 @@
                   object-fit: cover;
                 "
               />
-              <h3>{{ userdata.userName }}</h3>
+              <h3>
+                <b>{{ userdata.userName }}</b>
+              </h3>
               <p>
-                {{ userdata.designation }} <br />
-                {{ userdata.roles }}
+                <b
+                  >{{ userdata.designation }} <br />
+                  {{ userdata.roles }}</b
+                >
               </p>
-              <!-- <i class="far fa-edit mb-5"></i> -->
             </div>
             <div
               class="col-md-8"
               style="
-                background-color: rgb(0, 0, 0);
+                background-color: rgba(0, 0, 0, 0.77);
                 color: #f4f5f7;
-                border: 1.5px solid white;
+                border: 2px solid white;
+                border-top-right-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+                border-top-left-radius: 0.5rem;
+                border-bottom-left-radius: 0.5rem;
               "
             >
               <div class="card-body p-4">
@@ -43,9 +55,7 @@
                   style="color: white"
                   style="display: flex; justify-content: space-between"
                 >
-                  <h3>Personal Details</h3>
-                  <!-- <img id="editOption" src="https://cdn-icons.flaticon.com/png/512/5996/premium/5996831.png?token=exp=1657796890~hmac=e90cd603d3649355ae5326985836866f"  -->
-                  <!-- style="width: 27px; height: 27px; cursor: pointer;"/> -->
+                  <h3><b>Personal Details</b></h3>
                   <i
                     class="fa fa-edit"
                     style="font-size: 24px; color: white"
@@ -54,25 +64,23 @@
                 <hr />
                 <div class="row pt-1">
                   <div class="col-6 mb-3">
-                    <h4>Email</h4>
-                    <p style="color: #abacb0">{{ userdata.emailId }}</p>
+                    <h4><b>Email</b></h4>
+                    <p style="color: #d0d0d0">{{ userdata.emailId }}</p>
                   </div>
                   <div class="col-6 mb-3">
-                    <h4>Phone</h4>
-                    <p style="color: #abacb0">{{ userdata.phoneNum }}</p>
+                    <h4><b>Phone</b></h4>
+                    <p style="color: #d0d0d0">{{ userdata.phoneNum }}</p>
                   </div>
                 </div>
 
                 <div class="row pt-1">
                   <div class="col-6 mb-3">
-                    <h4>Employee ID</h4>
-                    <p style="color: #abacb0">
-                      {{ userdata.employeeId }}
-                    </p>
+                    <h4><b>Employee ID</b></h4>
+                    <p style="color: #d0d0d0">{{ userdata.employeeId }}</p>
                   </div>
                   <div class="col-6 mb-3">
-                    <h4>Department</h4>
-                    <p style="color: #abacb0">{{ userdata.departments }}</p>
+                    <h4><b>Department</b></h4>
+                    <p style="color: #d0d0d0">{{ userdata.departments }}</p>
                   </div>
                 </div>
               </div>
@@ -82,4 +90,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>
