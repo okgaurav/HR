@@ -19,9 +19,7 @@ export class UserProfileComponent implements OnInit {
   constructor(private user: UsersService) { 
     this.user.getData().subscribe((data:any)=>
       {
-        console.log(data);
         this.userdata=data;
-        console.log("1");
         console.log(this.userdata);
       })
   }

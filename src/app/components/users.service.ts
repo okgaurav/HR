@@ -10,7 +10,7 @@ export class UsersService {
     
    }
    getData(){
-    let url="server/api/v1/Users_New/2";
+    let url="server/api/v1/UserProfile/2";
     return this.http.get(url);
   }
 }
