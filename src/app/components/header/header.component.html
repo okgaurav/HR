@@ -1,6 +1,6 @@
 <div>
   <nav
-    class="navbar navbar-expand-lg bg-dark custom-container"
+    class="navbar navbar-expand-lg navbar-dark bg-dark custom-container"
     *ngIf="isLoggedIn; else loading"
   >
     <!-- Brand Logo -->
@@ -28,7 +28,7 @@
         id="navbarNav"
         [ngbCollapse]="isNavbarCollapsed"
       >
-        <button type="button" class="btn btn-color" style="width: auto">
+        <button type="button" class="btn btn-register" style="width: auto">
           <span>Recommend</span>
           <i class="bi bi-plus-lg"></i>
         </button>
@@ -116,5 +116,28 @@
         </ul>
       </div>
     </nav>
+  </ng-template>
+  <ng-template #content let-offcanvas>
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title">Offcanvas title</h4>
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+        (click)="offcanvas.dismiss('Cross click')"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>One fine body&hellip;</p>
+      <div class="text-end">
+        <button
+          type="button"
+          class="btn btn-outline-dark"
+          (click)="offcanvas.close('Close click')"
+        >
+          Close
+        </button>
+      </div>
+    </div>
   </ng-template>
 </div>
