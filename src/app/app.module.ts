@@ -13,7 +13,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FeedComponent } from './components/recommendation/feed/feed.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

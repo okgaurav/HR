@@ -8,20 +8,13 @@ import { users } from '../../../modals/users';
   styleUrls: ['./user-profile.component.scss'],
 })
 export class UserProfileComponent implements OnInit {
-  username = 'Utkarsh';
-  employeeId = '123456';
-  emailId = 'utsrivastava@soprabanking.com';
-  department = 'R&D';
-  contactNumber = '1234567890';
-  designation = 'Engineer Trainee';
-  role = 'HR';
   userdata!: users;
-  constructor(private user: UsersService) {
-    this.user.getData().subscribe((data: any) => {
+  constructor(private user: UsersService) {}
+
+  ngOnInit(): void {
+    this.user.getData(8).subscribe((data: any) => {
       this.userdata = data;
       console.log(this.userdata);
     });
   }
-
-  ngOnInit(): void {}
 }

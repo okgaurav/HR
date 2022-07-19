@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
 })
 export class UsersService {
   constructor(private http: HttpClient) {}
-  getData() {
-    let url = 'server/api/v1/Users_New/3';
-    return this.http.get(url);
+  getData(id: number) {
+    let url = 'server/api/v1/Users_New/';
+    return this.http.get(`${url}${id}`);
   }
 }
