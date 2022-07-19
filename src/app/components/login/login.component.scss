@@ -1,0 +1,73 @@
+@import "../../styles/settings.scss";
+
+.login-image{
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .login-image{
+    display: block;
+    width: 80%;
+    max-height: 90vh;
+  } }
+  
+  .form-section {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center; }
+    @media (max-width: 767px) {
+      .form-section {
+        padding: 35px; } }
+  
+  .login-wrapper {
+    width: 400px;
+    max-width: 100%; }
+    @media (max-width: 575px) {
+      .login-wrapper {
+        width: 100%; } }
+    .login-wrapper .form-control {
+      border: 0;
+      border-bottom: 2px solid #e7e7e7;
+      background-color: #F6F7FB;
+      border-radius: 0;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 15px 10px; }
+      .login-wrapper .form-control::-webkit-input-placeholder {
+        color: #b0adad; }
+      .login-wrapper .form-control::-moz-placeholder {
+        color: #b0adad; }
+      .login-wrapper .form-control:-ms-input-placeholder {
+        color: #b0adad; }
+      .login-wrapper .form-control::-ms-input-placeholder {
+        color: #b0adad; }
+      .login-wrapper .form-control::placeholder {
+        color: #b0adad; }
+  
+  
+  .login-btn {
+    padding: 13px 30px;
+    background-color: $dark-button-color;
+    border-radius: 0;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid $dark-button-border-color;
+    color: $dark-button-text-color; }
+    .login-btn:hover {
+      border: 1px solid $dark-button-border-color;
+      background-color: transparent;
+      color: $light-button-text-color; }
+  
+  .forgot-password {
+    font-size: 14px; }
+
+    .login-header{
+      height: 100px;
+    }
+    .hr-recomm-logo{
+      height: 50px;
+      width: 50px;
+    }

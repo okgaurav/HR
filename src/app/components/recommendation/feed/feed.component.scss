@@ -1,0 +1,22 @@
+@import "../../../styles/icons.scss";
+
+.custom-container{
+    margin: 2rem 15rem;
+}
+.add-recommendation {
+    margin: 1rem 0;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: rgba(127, 157, 187, 0.2) 0px 8px 24px;
+    border: 0;
+    display: flex;
+    align-items: center;
+  }
+  .add-recommendation div {
+    margin: auto 0.5rem;
+  }
+  .add-recommendation-heading {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  

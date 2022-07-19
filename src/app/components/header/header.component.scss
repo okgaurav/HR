@@ -1,0 +1,96 @@
+@import '../../styles/settings.scss';
+.custom-container{
+  padding: 0 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px){
+  .custom-container{
+    
+  padding: 0 4rem;
+  }
+}
+.logo{
+  height: 3.5rem;
+}
+.profile_photo{
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.bi{
+  font-weight: 900;
+  margin-left: 5px;
+  line-height: 20px;
+}
+
+.button-color{
+  border: 0;
+  background-color: transparent ;
+
+}
+
+
+
+.btn-color{
+  border: solid 1px transparent;
+  margin: 0.5rem;
+  width: 6rem;
+  height: 3rem;
+  font-size: 18px;
+  color: rgb(224, 224, 224);
+  border-radius: 0;
+}
+
+.btn-color:hover{
+  color: $navbar-button-hover;
+  border: solid $navbar-button-hover 1px;
+  
+}
+.btn-register{
+  color: $navbar-button-hover;
+  border: solid $navbar-button-hover 1px;
+  margin: 0.5rem;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 0;
+
+}
+.btn-register:hover{
+  color: $navbar-background-color;
+  border: solid $navbar-button-hover 1px;
+  background-color: $navbar-button-hover;
+  
+}
+.btn-color:focus{
+  box-shadow: none;
+}
+
+.userName{
+  border-bottom: 1.5px solid rgb(224, 224, 224);
+  font-size: 17px;
+  color: rgb(224, 224, 224);
+}
+
+.dropdown-button{
+  color: $navbar-button-hover ;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 15px;
+  font-size: 15px;
+}
+
+.dropdown-button:hover{
+  background-color: rgb(224, 224, 224);
+}
+
+::ng-deep .menu-dropdown{
+  background-color: $navbar-background-color !important;
+  margin-top: 10px;
+  border-radius: 2% !important;
+}
+.dropdown-toggle::after {
+  content: none;
+}

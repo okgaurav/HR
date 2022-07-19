@@ -1,32 +1,122 @@
-<nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
+<div>
+  <nav
+    class="navbar navbar-expand-lg navbar-dark bg-dark custom-container"
+    *ngIf="isLoggedIn; else logout"
+  >
+    <!-- Brand Logo -->
+    <div>
+      <a class="navbar-brand" [routerLink]="['/']">
+        <img class="logo" src="/assets/logos/HRlogoimage.png" />
+      </a>
     </div>
-  </div>
-</nav>
+    <div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        (click)="isNavbarCollapsed = !isNavbarCollapsed"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <!--this button is to represent the 3 lines which you see when see the web browser in mobile view -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse"
+        id="navbarNav"
+        [ngbCollapse]="isNavbarCollapsed"
+      >
+        <button type="button" class="btn btn-register" style="width: auto">
+          <span>Recommend</span>
+          <i class="bi bi-plus-lg"></i>
+        </button>
+        <div ngbDropdown>
+          <button
+            type="button"
+            class="btn btn-color btn-sm"
+            ngbDropdownToggle
+            style="width: auto"
+          >
+            View Recommendations
+          </button>
+          <div ngbDropdownMenu style="width: 15rem">
+            <button ngbDropdownItem [routerLink]="['/myfeed']">
+              My Recommendations
+            </button>
+            <button ngbDropdownItem>All Recommendations</button>
+            <button ngbDropdownItem *ngIf="isHr">
+              Private Recommendations
+            </button>
+            <button ngbDropdownItem *ngIf="isHr">
+              Archived Recommendations
+            </button>
+          </div>
+        </div>
+        <div ngbDropdown>
+          <button class="button-color" ngbDropdownToggle>
+            <img
+              class="profile_photo"
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            />
+          </button>
+          <div ngbDropdownMenu>
+            <button ngbDropdownItem disabled>Nikhil Tripathi</button>
+            <div class="dropdown-divider"></div>
+            <button ngbDropdownItem [routerLink]="['/userprofile']">
+              My Profile
+            </button>
+            <button ngbDropdownItem>Update Profile</button>
+            <div class="dropdown-divider"></div>
+            <button ngbDropdownItem>Logout</button>
+          </div>
+        </div>
+        <!--mat-button rectangular text button with no elevation-->
+
+        <!--mat-menu is floating panel contaning a list of options containging button as well-->
+      </div>
+    </div>
+  </nav>
+  <ng-template #logout>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-container">
+      <!-- Brand Logo -->
+      <a class="navbar-brand" [routerLink]="['/']">
+        <img class="logo" src="/assets/logos/HRlogoimage.png" />
+      </a>
+      <button
+        class="navbar-toggler"
+        (click)="isNavbarCollapsed = !isNavbarCollapsed"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+      >
+        <!--this button is to represent the 3 lines which you see when see the web browser in mobile view -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse"
+        style="direction: rtl"
+        id="navbarNav"
+        [ngbCollapse]="isNavbarCollapsed"
+      >
+        <ul class="navbar-nav" style="padding: 0">
+          <li class="nav-item">
+            <button
+              type="button"
+              class="btn btn-register"
+              [routerLink]="['/signup']"
+            >
+              Register
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="btn-color btn" [routerLink]="['/login']">
+              Login
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </ng-template>
+</div>
